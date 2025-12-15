@@ -1,0 +1,30 @@
+{
+  "name": "Ayman Mohamed",
+  "title": "Software Engineer",
+  "location": "El Beheira, Egypt",
+  "bio": "Fresh software engineer passionate about creating efficient, scalable solutions with modern web technologies. I specialize in full-stack development with React, Node.js, and cloud platforms. Always eager to learn new technologies and tackle challenging problems.",
+  "email": "eng.ayman.mohamed.abotaha.kasim@gmail.com",
+  "phone": "+20 155 585 3992",
+  "socialLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/Eng-Ayman-Mohamed",
+      "icon": "fa-github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/ayman-mohamed-abotaha",
+      "icon": "fa-linkedin-in"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/ayman_dev",
+      "icon": "fa-twitter"
+    },
+    {
+      "name": "Stack Overflow",
+      "url": "https://stackoverflow.com/users/ayman-mohamed",
+      "icon": "fa-stack-overflow"
+    }
+  ]
+}

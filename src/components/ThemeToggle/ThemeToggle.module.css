@@ -1,0 +1,69 @@
+.themeToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: 70px;
+  height: 35px;
+  padding: 0;
+}
+
+.toggleTrack {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-secondary);
+  border-radius: 50px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  border: 2px solid var(--border);
+}
+
+.themeToggle.dark .toggleTrack {
+  background-color: #333;
+  border-color: #555;
+}
+
+.toggleThumb {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.themeToggle.dark .toggleThumb {
+  transform: translate(35px, -50%);
+  background-color: #f1c40f;
+}
+
+.icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  pointer-events: none;
+}
+
+.icons i {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.icons .fa-sun {
+  color: #f39c12;
+}
+
+.icons .fa-moon {
+  color: #ecf0f1;
+}

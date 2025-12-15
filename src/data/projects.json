@@ -1,0 +1,50 @@
+[
+  {
+    "title": "E-Commerce Platform",
+    "description": "A full-featured e-commerce platform with user authentication, product catalog, shopping cart, and payment integration. Built with React, Node.js, and MongoDB.",
+    "technologies": ["React", "Node.js", "MongoDB", "Express", "Stripe API"],
+    "github": "https://github.com/ayman-mohamed/ecommerce-platform",
+    "liveDemo": "https://ecommerce-demo.ayman.dev",
+    "icon": "fas fa-shopping-cart"
+  },
+  {
+    "title": "Task Management App",
+    "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+    "technologies": ["React", "Firebase", "Material-UI", "React DnD"],
+    "github": "https://github.com/ayman-mohamed/task-manager",
+    "liveDemo": "https://taskmanager.ayman.dev",
+    "icon": "fas fa-tasks"
+  },
+  {
+    "title": "Weather Dashboard",
+    "description": "A responsive weather dashboard that displays current conditions and forecasts for multiple cities using OpenWeatherMap API.",
+    "technologies": ["React", "Chart.js", "OpenWeather API", "CSS Modules"],
+    "github": "https://github.com/ayman-mohamed/weather-dashboard",
+    "liveDemo": "https://weather.ayman.dev",
+    "icon": "fas fa-cloud-sun"
+  },
+  {
+    "title": "Portfolio Website",
+    "description": "A responsive portfolio website with dark/light theme toggle, project showcase, and contact form. The site you're currently viewing!",
+    "technologies": ["React", "CSS Modules", "Context API", "Responsive Design"],
+    "github": "https://github.com/ayman-mohamed/portfolio",
+    "liveDemo": "https://ayman.dev",
+    "icon": "fas fa-laptop-code"
+  },
+  {
+    "title": "Chat Application",
+    "description": "A real-time chat application with multiple rooms, user authentication, and message history using WebSockets.",
+    "technologies": ["React", "Socket.io", "Node.js", "JWT", "Redis"],
+    "github": "https://github.com/ayman-mohamed/chat-app",
+    "liveDemo": "https://chat.ayman.dev",
+    "icon": "fas fa-comments"
+  },
+  {
+    "title": "Expense Tracker",
+    "description": "A personal finance application for tracking expenses, visualizing spending patterns, and setting budgets.",
+    "technologies": ["React", "Redux", "Chart.js", "LocalStorage", "PWA"],
+    "github": "https://github.com/ayman-mohamed/expense-tracker",
+    "liveDemo": "https://expenses.ayman.dev",
+    "icon": "fas fa-chart-pie"
+  }
+]

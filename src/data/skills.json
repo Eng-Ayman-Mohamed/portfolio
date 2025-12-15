@@ -1,0 +1,110 @@
+[
+  {
+    "category": "Frontend Development",
+    "icon": "fas fa-code",
+    "skills": [
+      {
+        "name": "React",
+        "icon": "fab fa-react",
+        "level": 90
+      },
+      {
+        "name": "JavaScript",
+        "icon": "fab fa-js-square",
+        "level": 85
+      },
+      {
+        "name": "HTML5",
+        "icon": "fab fa-html5",
+        "level": 95
+      },
+      {
+        "name": "CSS3",
+        "icon": "fab fa-css3-alt",
+        "level": 90
+      },
+      {
+        "name": "TypeScript",
+        "icon": "fas fa-code",
+        "level": 75
+      },
+      {
+        "name": "Redux",
+        "icon": "fas fa-sitemap",
+        "level": 80
+      }
+    ]
+  },
+  {
+    "category": "Backend Development",
+    "icon": "fas fa-server",
+    "skills": [
+      {
+        "name": "Node.js",
+        "icon": "fab fa-node-js",
+        "level": 85
+      },
+      {
+        "name": "Express",
+        "icon": "fas fa-network-wired",
+        "level": 80
+      },
+      {
+        "name": "MongoDB",
+        "icon": "fas fa-database",
+        "level": 75
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "fas fa-database",
+        "level": 70
+      },
+      {
+        "name": "REST APIs",
+        "icon": "fas fa-cloud",
+        "level": 85
+      },
+      {
+        "name": "Firebase",
+        "icon": "fas fa-fire",
+        "level": 75
+      }
+    ]
+  },
+  {
+    "category": "Tools & Others",
+    "icon": "fas fa-tools",
+    "skills": [
+      {
+        "name": "Git",
+        "icon": "fab fa-git-alt",
+        "level": 90
+      },
+      {
+        "name": "Docker",
+        "icon": "fab fa-docker",
+        "level": 65
+      },
+      {
+        "name": "AWS",
+        "icon": "fab fa-aws",
+        "level": 60
+      },
+      {
+        "name": "Webpack",
+        "icon": "fas fa-box",
+        "level": 70
+      },
+      {
+        "name": "Figma",
+        "icon": "fab fa-figma",
+        "level": 75
+      },
+      {
+        "name": "Agile/Scrum",
+        "icon": "fas fa-users",
+        "level": 80
+      }
+    ]
+  }
+]

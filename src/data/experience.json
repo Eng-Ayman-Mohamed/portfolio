@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Software Engineering Intern",
+    "subtitle": "Tech Solutions Inc.",
+    "date": "Jun 2023 - Aug 2023",
+    "description": [
+      "Developed and maintained front-end features for customer dashboard using React and Redux",
+      "Collaborated with backend team to integrate REST APIs and improve data fetching performance",
+      "Implemented responsive UI components that improved mobile user engagement by 25%",
+      "Participated in agile development processes including daily standups and sprint planning"
+    ],
+    "technologies": ["React", "Redux", "JavaScript", "REST APIs", "Git"]
+  },
+  {
+    "title": "Freelance Web Developer",
+    "subtitle": "Self-Employed",
+    "date": "Jan 2023 - Present",
+    "description": [
+      "Built responsive websites and web applications for small businesses and startups",
+      "Implemented custom WordPress themes and plugins for clients with specific requirements",
+      "Optimized website performance achieving Google PageSpeed scores above 90",
+      "Provided ongoing maintenance and support for deployed applications"
+    ],
+    "technologies": ["React", "WordPress", "JavaScript", "CSS3", "PHP"]
+  },
+  {
+    "title": "Bachelor of Computer Science",
+    "subtitle": "Cairo University",
+    "date": "Sep 2019 - Jun 2023",
+    "description": [
+      "Graduated with First Class Honors (GPA: 3.8/4.0)",
+      "Coursework: Data Structures & Algorithms, Database Systems, Web Technologies, Software Engineering",
+      "Final Year Project: Developed a machine learning-based recommendation system for e-learning platforms",
+      "President of University Coding Club, organized hackathons and tech workshops"
+    ],
+    "technologies": ["Python", "Java", "SQL", "Machine Learning", "Algorithms"]
+  },
+  {
+    "title": "Full Stack Development Bootcamp",
+    "subtitle": "Code Academy",
+    "date": "Mar 2022 - Jun 2022",
+    "description": [
+      "Completed intensive 3-month program covering modern full-stack development",
+      "Built multiple projects including a social media app and e-commerce platform",
+      "Learned industry best practices for version control, testing, and deployment",
+      "Collaborated with team members using Git and agile methodologies"
+    ],
+    "technologies": ["MERN Stack", "Git", "Testing", "Deployment", "Agile"]
+  }
+]
