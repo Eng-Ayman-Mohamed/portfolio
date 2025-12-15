@@ -29,9 +29,9 @@
         "level": 75
       },
       {
-        "name": "Redux",
-        "icon": "fas fa-sitemap",
-        "level": 80
+        "name": "Tailwind CSS",
+        "icon": "fab fa-css3-alt",
+        "level": 85
       }
     ]
   },
@@ -55,19 +55,9 @@
         "level": 75
       },
       {
-        "name": "PostgreSQL",
-        "icon": "fas fa-database",
-        "level": 70
-      },
-      {
         "name": "REST APIs",
         "icon": "fas fa-cloud",
         "level": 85
-      },
-      {
-        "name": "Firebase",
-        "icon": "fas fa-fire",
-        "level": 75
       }
     ]
   },
@@ -81,24 +71,14 @@
         "level": 90
       },
       {
-        "name": "Docker",
-        "icon": "fab fa-docker",
-        "level": 65
-      },
-      {
-        "name": "AWS",
-        "icon": "fab fa-aws",
-        "level": 60
-      },
-      {
-        "name": "Webpack",
-        "icon": "fas fa-box",
-        "level": 70
-      },
-      {
         "name": "Figma",
         "icon": "fab fa-figma",
         "level": 75
+      },
+      {
+        "name": "Vercel",
+        "icon": "fas fa-rocket", 
+        "level": 85
       },
       {
         "name": "Agile/Scrum",

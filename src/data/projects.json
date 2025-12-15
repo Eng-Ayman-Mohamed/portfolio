@@ -27,7 +27,7 @@
     "title": "Portfolio Website",
     "description": "A responsive portfolio website with dark/light theme toggle, project showcase, and contact form. The site you're currently viewing!",
     "technologies": ["React", "CSS Modules", "Context API", "Responsive Design"],
-    "github": "https://github.com/ayman-mohamed/portfolio",
+    "github": "https://github.com/Eng-Ayman-Mohamed/portfolio",
     "liveDemo": "https://ayman.dev",
     "icon": "fas fa-laptop-code"
   },

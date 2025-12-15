@@ -1,50 +1,36 @@
 [
   {
-    "title": "Software Engineering Intern",
-    "subtitle": "Tech Solutions Inc.",
-    "date": "Jun 2023 - Aug 2023",
+    "title": "Machine Learning Intern",
+    "subtitle": "Alexandria University ",
+    "date": "Aug 2023 - Sep 2023",
     "description": [
-      "Developed and maintained front-end features for customer dashboard using React and Redux",
-      "Collaborated with backend team to integrate REST APIs and improve data fetching performance",
-      "Implemented responsive UI components that improved mobile user engagement by 25%",
-      "Participated in agile development processes including daily standups and sprint planning"
+      "Developed an assistive Android application integrating real-time object detection with Google's Text-to-Speech API to provide auditory descriptions of a user's surroundings.",
+      "Gained proficiency in the full Android development lifecycle using Android Studio, from prototyping and coding to testing on emulators and debugging performance issues.",
+      "Successfully merged machine learning capabilities with core mobile app features, demonstrating skills in AI integration and creating accessible technology solutions."
     ],
-    "technologies": ["React", "Redux", "JavaScript", "REST APIs", "Git"]
+    "technologies": ["Android Studio", "Debugging", "Google APIs"]
   },
   {
-    "title": "Freelance Web Developer",
-    "subtitle": "Self-Employed",
-    "date": "Jan 2023 - Present",
+    "title": "Graduation Project",
+    "subtitle": "Alexandria University",
+    "date": "Sep 2023 - Jul 2024",
     "description": [
-      "Built responsive websites and web applications for small businesses and startups",
-      "Implemented custom WordPress themes and plugins for clients with specific requirements",
-      "Optimized website performance achieving Google PageSpeed scores above 90",
-      "Provided ongoing maintenance and support for deployed applications"
+      "Led full-stack development of a Hotel Reservation System as a graduation capstone project.",
+      "Designed an admin dashboard for managing rooms, users, bookings, and viewing system analytics.",
+      "Created a customer-facing UI for browsing, filtering, and booking rooms with confirmation workflows.",
+      "Showcased proficiency in UI/UX design, API development, database management, and cross-platform deployment."
     ],
-    "technologies": ["React", "WordPress", "JavaScript", "CSS3", "PHP"]
+    "technologies": ["React", "JavaScript", "CSS3", "HTML3", "Tailwind CSS", "Agile Methodology"]
   },
   {
-    "title": "Bachelor of Computer Science",
-    "subtitle": "Cairo University",
-    "date": "Sep 2019 - Jun 2023",
+    "title": "Bachelor of Computer and Systems Engineering",
+    "subtitle": "Alexandria University",
+    "date": "Sep 2019 - Jun 2024",
     "description": [
-      "Graduated with First Class Honors (GPA: 3.8/4.0)",
       "Coursework: Data Structures & Algorithms, Database Systems, Web Technologies, Software Engineering",
       "Final Year Project: Developed a machine learning-based recommendation system for e-learning platforms",
-      "President of University Coding Club, organized hackathons and tech workshops"
+      "OC member of the Universty ACM student chapter , organized hackathons and tech workshops"
     ],
-    "technologies": ["Python", "Java", "SQL", "Machine Learning", "Algorithms"]
-  },
-  {
-    "title": "Full Stack Development Bootcamp",
-    "subtitle": "Code Academy",
-    "date": "Mar 2022 - Jun 2022",
-    "description": [
-      "Completed intensive 3-month program covering modern full-stack development",
-      "Built multiple projects including a social media app and e-commerce platform",
-      "Learned industry best practices for version control, testing, and deployment",
-      "Collaborated with team members using Git and agile methodologies"
-    ],
-    "technologies": ["MERN Stack", "Git", "Testing", "Deployment", "Agile"]
+    "technologies": ["C", "Java", "SQL", "Python", "Algorithms", "Data Structures", "c++", "OOP", "Software Development",  "Team Collaboration"]
   }
 ]

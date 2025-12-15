@@ -52,7 +52,7 @@ src/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/Eng-Ayman-Mohamed/portfolio.git
 cd portfolio
 ```
 
@@ -63,14 +63,8 @@ npm install
 yarn install
 ```
 
-3. **Set up your personal data**
-```bash
-# Copy the private data template
-cp src/data/private.example.json src/data/private.json
-```
-
-4. **Edit your personal information**
-Open `src/data/private.json` and fill in your details:
+3. **Edit your personal information**
+Open `src/data/personal.json` and fill in your details:
 ```json
 {
   "email": "your.email@example.com",
@@ -85,25 +79,24 @@ Open `src/data/private.json` and fill in your details:
 }
 ```
 
-5. **Add your profile picture** (Optional)
-Place your photo in `src/components/Hero/` as `profile.jpg`
+4. **Add your profile picture** 
+Place your photo in `src/data/` as `profile.jpg`
 
-6. **Start the development server**
+5. **Start the development server**
 ```bash
 npm start
 # or
 yarn start
 ```
 
-7. **Open your browser**
+6. **Open your browser**
 Navigate to `http://localhost:3000`
 
 ## 📝 Customization
 
 ### 1. Update Content
 Edit these files in `src/data/`:
-- `public.json` - Public information (name, bio, etc.)
-- `private.json` - Private contact info (email, phone)
+- `public.json` - Public information 
 - `projects.json` - Your projects
 - `skills.json` - Your skills
 - `experience.json` - Work & education
@@ -193,15 +186,6 @@ npm install --save-dev gh-pages
 npm run deploy
 ```
 
-## 🔧 Environment Variables
-
-Create `.env.local` for sensitive data:
-```env
-REACT_APP_EMAIL=your.email@example.com
-REACT_APP_PHONE=+1234567890
-REACT_APP_GITHUB_URL=https://github.com/yourusername
-```
-
 ## 📱 Responsive Breakpoints
 
 - **Mobile**: < 576px
@@ -232,8 +216,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Ayman Mohamed**
 - Portfolio: [ayman.dev](https://ayman.dev)
-- GitHub: [@ayman-mohamed](https://github.com/ayman-mohamed)
-- LinkedIn: [ayman-mohamed](https://linkedin.com/in/ayman-mohamed)
+- GitHub: [Eng-Ayman-Mohamed](https://github.com/Eng-Ayman-Mohamed)
+- LinkedIn: [ayman-mohamed-abotaha](https://linkedin.com/in/ayman-mohamed-abotaha)
 
 ## 🙏 Acknowledgments
 
@@ -244,7 +228,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-For support, email [ayman.mohamed@example.com](mailto:ayman.mohamed@example.com) or open an issue in the GitHub repository.
+For support, email [eng.ayman.mohamed.abotaha.kasim@gmail.com](mailto:eng.ayman.mohamed.abotaha.kasim@gmail.com) or open an issue in the GitHub repository.
 
 ---
 
