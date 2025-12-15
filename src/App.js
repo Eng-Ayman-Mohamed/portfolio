@@ -7,6 +7,7 @@ import Skills from './components/Skills/Skills';
 import Experience from './components/Experience/Experience';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import ColorPicker from './components/ColorPicker/ColorPicker'; // Use test version
 import styles from './styles/App.module.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Contact />
         </main>
         <Footer />
+        <ColorPicker /> 
       </div>
     </ThemeProvider>
   );

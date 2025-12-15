@@ -8,43 +8,19 @@
     "icon": "fas fa-shopping-cart"
   },
   {
-    "title": "Task Management App",
-    "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    "technologies": ["React", "Firebase", "Material-UI", "React DnD"],
-    "github": "https://github.com/ayman-mohamed/task-manager",
-    "liveDemo": "https://taskmanager.ayman.dev",
-    "icon": "fas fa-tasks"
-  },
-  {
-    "title": "Weather Dashboard",
-    "description": "A responsive weather dashboard that displays current conditions and forecasts for multiple cities using OpenWeatherMap API.",
-    "technologies": ["React", "Chart.js", "OpenWeather API", "CSS Modules"],
-    "github": "https://github.com/ayman-mohamed/weather-dashboard",
-    "liveDemo": "https://weather.ayman.dev",
-    "icon": "fas fa-cloud-sun"
+    "title": "THotel Reservation System",
+    "description": "The Hotel Reservation System provides customers with a seamless way to browse and book rooms using either the web interface or the Android mobile app.",
+    "technologies": ["React", "Node.js", "Git & GitHub", "Express", "MongoDB", "Java / Kotlin"],
+    "github": "https://github.com/Sakan-OnlineReservationSystem/Final_Project",
+    "liveDemo": "https://final-project-sigma-ochre.vercel.app/",
+    "icon": "fas fa-hotel"
   },
   {
     "title": "Portfolio Website",
     "description": "A responsive portfolio website with dark/light theme toggle, project showcase, and contact form. The site you're currently viewing!",
     "technologies": ["React", "CSS Modules", "Context API", "Responsive Design"],
     "github": "https://github.com/Eng-Ayman-Mohamed/portfolio",
-    "liveDemo": "https://ayman.dev",
+    "liveDemo": "https://portfolio-alpha-lime-11.vercel.app/",
     "icon": "fas fa-laptop-code"
-  },
-  {
-    "title": "Chat Application",
-    "description": "A real-time chat application with multiple rooms, user authentication, and message history using WebSockets.",
-    "technologies": ["React", "Socket.io", "Node.js", "JWT", "Redis"],
-    "github": "https://github.com/ayman-mohamed/chat-app",
-    "liveDemo": "https://chat.ayman.dev",
-    "icon": "fas fa-comments"
-  },
-  {
-    "title": "Expense Tracker",
-    "description": "A personal finance application for tracking expenses, visualizing spending patterns, and setting budgets.",
-    "technologies": ["React", "Redux", "Chart.js", "LocalStorage", "PWA"],
-    "github": "https://github.com/ayman-mohamed/expense-tracker",
-    "liveDemo": "https://expenses.ayman.dev",
-    "icon": "fas fa-chart-pie"
   }
 ]

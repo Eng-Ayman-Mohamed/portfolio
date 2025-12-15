@@ -1,14 +1,22 @@
 :root {
-  /* Light theme variables */
+  /* Light theme variables - Default values */
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
   --bg-primary-dark: #121212;
   --bg-secondary-dark: #1e1e1e;
   --text-primary: #333333;
   --text-secondary: #666666;
+  
+  /* Dynamic colors - Will be updated by ThemeContext */
   --accent: #4361ee;
   --accent-light: #4895ef;
   --accent-dark: #3a56d4;
+  
+  /* Status colors */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  
   --border: #e0e0e0;
   --border-dark: #333333;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -45,39 +53,24 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Apply accent color to interactive elements */
+a:hover,
+button:hover,
+.navLink:hover {
+  color: var(--accent);
 }
 
-a {
-  color: inherit;
+.primaryButton {
+  background-color: var(--accent);
 }
 
-ul {
-  list-style-type: none;
+.primaryButton:hover {
+  background-color: var(--accent-dark);
 }
 
-button {
-  font-family: inherit;
-}
-
-section {
-  scroll-margin-top: 80px;
-}
-
-/* Scrollbar styling */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
-}
-
+/* Update scrollbar color */
 ::-webkit-scrollbar-thumb {
   background: var(--accent);
-  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {

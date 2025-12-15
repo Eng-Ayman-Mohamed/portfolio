@@ -1,0 +1,307 @@
+.colorPickerContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+} 
+
+/* Toggle Button */
+.toggleButton {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggleButton:hover {
+  transform: scale(1.1) rotate(15deg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.toggleButton:active {
+  transform: scale(0.95);
+}
+
+/* Panel */
+.panel {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 350px;
+  max-height: 0;
+  overflow: hidden;
+  background: var(--bg-primary);
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.panel.open {
+  max-height: 80vh;
+  opacity: 1;
+  visibility: visible;
+  overflow-y: auto;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.panelHeader h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.3rem;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.closeButton:hover {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+/* Preset Colors */
+.presetSection,
+.customSection,
+.themePreview {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.presetSection h4,
+.customSection h4,
+.themePreview h4 {
+  margin: 0 0 1rem 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.presetGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+}
+
+.presetButton {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.presetButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: var(--accent);
+}
+
+.presetPreview {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 0.5rem;
+}
+
+.presetColor {
+  width: 100%;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.presetName {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Custom Color Inputs */
+.colorInputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.colorInput {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.colorInput label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.colorInputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.colorPickerInput {
+  width: 50px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.colorPickerInput::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.colorPickerInput::-webkit-color-swatch {
+  border: 2px solid var(--border);
+  border-radius: 6px;
+}
+
+.colorValue {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-family: monospace;
+  background: var(--bg-secondary);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+
+.colorPreview {
+  width: 100%;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  margin-top: 0.5rem;
+}
+
+/* Action Buttons */
+.actionButtons {
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.resetButton,
+.saveButton {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.resetButton {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+.resetButton:hover {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--text-secondary);
+}
+
+.saveButton {
+  background: var(--accent);
+  color: white;
+}
+
+.saveButton:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+}
+
+/* Theme Preview */
+.previewItems {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.previewItem {
+  flex: 1;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .panel {
+    width: 300px;
+    right: -10px;
+  }
+
+  .presetGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .toggleButton {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .colorPickerContainer {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .panel {
+    width: calc(100vw - 40px);
+    right: 10px;
+  }
+}

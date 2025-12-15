@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import personalData from '../../data/personal.json';
 import { useTheme } from '../../contexts/ThemeContext';
 import styles from './Contact.module.css';
@@ -13,6 +14,12 @@ const Contact = () => {
     message: ''
   });
   const [status, setStatus] = useState({ type: '', message: '' });
+  const [isLoading, setIsLoading] = useState(false);
+
+  // Replace these with your EmailJS credentials
+  const EMAILJS_SERVICE_ID = 'service_sq2qd8k';  // Get from EmailJS dashboard
+  const EMAILJS_TEMPLATE_ID = 'your_template_id'; // Get from EmailJS dashboard
+  const EMAILJS_USER_ID = 'your_user_id';        // Get from EmailJS dashboard
 
   const handleChange = (e) => {
     setFormData({
@@ -24,27 +31,59 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Simple validation
+    // Validation
     if (!formData.name || !formData.email || !formData.message) {
       setStatus({ type: 'error', message: 'Please fill in all required fields.' });
       return;
     }
-    
-    // Simulate form submission
-    setStatus({ type: 'success', message: 'Message sent successfully! I\'ll get back to you soon.' });
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
+
+    if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      setStatus({ type: 'error', message: 'Please enter a valid email address.' });
+      return;
+    }
+
+    setIsLoading(true);
+    setStatus({ type: '', message: '' });
+
+    // Send email using EmailJS
+    emailjs.send(
+      EMAILJS_SERVICE_ID,
+      EMAILJS_TEMPLATE_ID,
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject || 'Message from Portfolio Contact Form',
+        message: formData.message,
+        to_email: email, // Your email address from personal.json
+        reply_to: formData.email
+      },
+      EMAILJS_USER_ID
+    )
+    .then((response) => {
+      console.log('Email sent successfully:', response);
+      setStatus({ 
+        type: 'success', 
+        message: 'Message sent successfully! I\'ll get back to you soon.' 
+      });
+      
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    })
+    .catch((error) => {
+      console.error('Email sending failed:', error);
+      setStatus({ 
+        type: 'error', 
+        message: 'Failed to send message. Please try again later or email me directly.' 
+      });
+    })
+    .finally(() => {
+      setIsLoading(false);
     });
-    
-    // Clear success message after 5 seconds
-    setTimeout(() => {
-      setStatus({ type: '', message: '' });
-    }, 5000);
   };
 
   return (
@@ -118,6 +157,7 @@ const Contact = () => {
             
             {status.message && (
               <div className={`${styles.statusMessage} ${status.type === 'error' ? styles.error : styles.success}`}>
+                <i className={`fas ${status.type === 'error' ? 'fa-exclamation-circle' : 'fa-check-circle'}`}></i>
                 {status.message}
               </div>
             )}
@@ -133,6 +173,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
+                    disabled={isLoading}
                   />
                 </div>
                 
@@ -145,6 +186,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
+                    disabled={isLoading}
                   />
                 </div>
               </div>
@@ -157,6 +199,7 @@ const Contact = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
+                  disabled={isLoading}
                 />
               </div>
               
@@ -169,11 +212,24 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
+                  disabled={isLoading}
                 ></textarea>
               </div>
               
-              <button type="submit" className={styles.submitButton}>
-                Send Message <i className="fas fa-paper-plane"></i>
+              <button 
+                type="submit" 
+                className={styles.submitButton}
+                disabled={isLoading}
+              >
+                {isLoading ? (
+                  <>
+                    <i className="fas fa-spinner fa-spin"></i> Sending...
+                  </>
+                ) : (
+                  <>
+                    Send Message <i className="fas fa-paper-plane"></i>
+                  </>
+                )}
               </button>
             </form>
           </div>
