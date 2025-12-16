@@ -1,9 +1,9 @@
 [
   {
     "title": "E-Commerce Platform",
-    "description": "A full-featured e-commerce platform with user authentication, product catalog, shopping cart, and payment integration. Built with React, Node.js, and MongoDB.",
+    "description": "A full-featured e-commerce platform with user authentication, product catalog, shopping cart, and wishList , userInfo editing. Built with React, Node.js, and MongoDB.",
     "technologies": ["React", "Node.js", "MongoDB", "Express", "Stripe API"],
-    "github": "https://github.com/ayman-mohamed/ecommerce-platform",
+    "github": "https://github.com/Eng-Ayman-Mohamed/shopStore",
     "liveDemo": "https://ecommerce-demo.ayman.dev",
     "icon": "fas fa-shopping-cart"
   },
