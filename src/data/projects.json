@@ -8,7 +8,7 @@
     "icon": "fas fa-shopping-cart"
   },
   {
-    "title": "THotel Reservation System",
+    "title": "Hotel Reservation System",
     "description": "The Hotel Reservation System provides customers with a seamless way to browse and book rooms using either the web interface or the Android mobile app.",
     "technologies": ["React", "Node.js", "Git & GitHub", "Express", "MongoDB", "Java / Kotlin"],
     "github": "https://github.com/Sakan-OnlineReservationSystem/Final_Project",
