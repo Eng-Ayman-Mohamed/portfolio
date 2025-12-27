@@ -10,7 +10,14 @@
   {
     "title": "Hotel Reservation System",
     "description": "The Hotel Reservation System provides customers with a seamless way to browse and book rooms using either the web interface or the Android mobile app.",
-    "technologies": ["React", "Node.js", "Git & GitHub", "Express", "MongoDB", "Java / Kotlin"],
+    "technologies": [
+      "React",
+      "Node.js",
+      "Git & GitHub",
+      "Express",
+      "MongoDB",
+      "Java / Kotlin"
+    ],
     "github": "https://github.com/Sakan-OnlineReservationSystem/Final_Project",
     "liveDemo": "https://final-project-sigma-ochre.vercel.app/",
     "icon": "fas fa-hotel"
@@ -18,7 +25,12 @@
   {
     "title": "Portfolio Website",
     "description": "A responsive portfolio website with dark/light theme toggle, project showcase, and contact form. The site you're currently viewing!",
-    "technologies": ["React", "CSS Modules", "Context API", "Responsive Design"],
+    "technologies": [
+      "React",
+      "CSS Modules",
+      "Context API",
+      "Responsive Design"
+    ],
     "github": "https://github.com/Eng-Ayman-Mohamed/portfolio",
     "liveDemo": "https://portfolio-alpha-lime-11.vercel.app/",
     "icon": "fas fa-laptop-code"
